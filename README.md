@@ -4,6 +4,8 @@
 
 This project is a Dockerized Django application integrated with AWS infrastructure managed via Terraform. It includes configurations for development, staging, and production environments, utilizing Docker Compose for container orchestration and Nginx for serving the application. The project structure is organized to streamline development, deployment, and maintenance processes.
 
+![](data/aws_infrastructure_with_cloudflare.png)
+
 ## Features
 
 - **Django Framework**: Robust web framework for rapid development.
