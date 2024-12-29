@@ -1,0 +1,14 @@
+services:
+  terraform:
+    container_name: terraform
+    image: hashicorp/terraform:1.10
+    platform: linux/x86_64
+    volumes:
+      - .:/infra
+    working_dir: /infra
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
+volumes:
+  infra:

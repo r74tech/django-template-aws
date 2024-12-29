@@ -1,0 +1,27 @@
+# 環境変数
+prefix                  = "tf-pg"
+project                 = "terraform-playground"
+owner                   = "default"
+region                  = "ap-northeast-1"
+
+django_settings_module  = "app.settings"
+secret_key              = "this_is_secret_key"
+db_username             = "app"
+db_password             = "this_is_db_password"
+
+# ECSのロール設定
+task_role_arn           = "arn:aws:iam::111111111111:role/XXXX"
+execution_role_arn      = "arn:aws:iam::111111111111:role/XXXX"
+
+# Djangoの環境変数
+django_allowed_hosts    = ""
+csrf_trusted_ports      = "443 80"
+
+# ECR
+ecr_image_app="111111111111.dkr.ecr.ap-northeast-1.amazonaws.com/tf-pg/django:latest"
+ecr_image_web="111111111111.dkr.ecr.ap-northeast-1.amazonaws.com/tf-pg/nginx:latest"
+
+
+domain=""
+cloudflare_zone_id=""
+cloudflare_api_token=""
